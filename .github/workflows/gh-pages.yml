@@ -1,0 +1,62 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      # 源码所在分支
+      - main
+  workflow_dispatch:
+
+# 发布构建产物到 GitHub Pages。令牌只需读取仓库、写 Pages、写 id-token。
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同一时间只跑一次部署，让进行中的生产部署先完成
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # 文章的 Git 日期需要完整提交历史
+          fetch-depth: 0
+
+      # 从 package.json 的 packageManager 字段读取 pnpm 版本
+      - uses: pnpm/action-setup@v6
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+          include-hidden-files: true
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

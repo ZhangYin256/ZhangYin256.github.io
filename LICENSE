@@ -1,0 +1,29 @@
+本站点内的**文章文字**（`pages/posts/` 与 `pages/about/` 下的 Markdown 正文）采用
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+（CC BY-NC-SA 4.0）协议授权。
+
+Copyright (c) 2026 彰隐
+
+你可以自由地：
+
+- **共享** — 以任何媒介或格式复制、发行本作品
+- **演绎** — 修改、转换或以本作品为基础进行创作
+
+惟须遵守以下条件：
+
+- **署名（BY）** — 必须给出适当的署名，提供指向本协议的链接，并说明是否作出了
+  修改。署名方式为保留作者署名「彰隐」与原文链接（https://zhangyin256.github.io/）。
+- **非商业性使用（NC）** — 不得将本作品用于商业目的。
+- **相同方式共享（SA）** — 若修改、转换或以本作品为基础进行创作，必须基于与
+  原作品相同的协议分发你的作品。
+- **没有附加限制** — 不得适用法律术语或技术措施，从而限制他人做本协议允许的事。
+
+本协议的法律文本以其官方发布为准：
+
+- 法律文本（英文）：https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+- 中文摘要：https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans
+
+文中示例代码不适用本协议，改用 MIT 协议授权，见 `LICENSE-CODE`。
+
+引用内容（包括但不限于歌词、图片、他人视频与文章）的版权归原作者所有，
+不在本协议授权范围内。引用仅为学习与记录之用，如有侵权请联系作者删除。

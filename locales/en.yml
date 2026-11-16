@@ -1,0 +1,4 @@
+# Custom i18n overrides for the theme's default copy
+intro:
+  desc: Zhang Yin's homepage
+  hi: Hello
