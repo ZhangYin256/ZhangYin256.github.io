@@ -17,7 +17,7 @@
 export const giscus = {
   enable: false,
   /** 仓库全名 owner/repo */
-  repo: 'ZhangYin256/zhangyin256.github.io',
+  repo: 'ZhangYin256/ZhangYin256.github.io',
   /** 从 giscus.app 复制 */
   repoId: '',
   /** 讨论分类名，需与 giscus.app 上选的保持一致 */

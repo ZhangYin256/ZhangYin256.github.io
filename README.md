@@ -4,7 +4,7 @@
 通过 GitHub Actions 自动构建并部署到 GitHub Pages。
 
 - 线上地址：<https://zhangyin256.github.io/>
-- 仓库：<https://github.com/ZhangYin256/zhangyin256.github.io>
+- 仓库：<https://github.com/ZhangYin256/ZhangYin256.github.io>
 
 ## 写作流程
 
@@ -63,7 +63,7 @@ draft: false
 2. 推送本项目的 `main` 分支：
 
    ```bash
-   git remote add origin https://github.com/ZhangYin256/zhangyin256.github.io.git
+   git remote add origin https://github.com/ZhangYin256/ZhangYin256.github.io.git
    git push -u origin main
    ```
 

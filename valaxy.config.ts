@@ -86,7 +86,7 @@ export default defineValaxyConfig<UserThemeConfig>({
 
     // 页脚「404」页面反馈入口
     notFound: {
-      issueLink: 'https://github.com/ZhangYin256/zhangyin256.github.io/issues/new',
+      issueLink: 'https://github.com/ZhangYin256/ZhangYin256.github.io/issues/new',
     },
   },
 
