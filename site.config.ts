@@ -1,4 +1,5 @@
 import { defineSiteConfig } from 'valaxy'
+import { giscus } from './config/integrations'
 
 /**
  * 站点信息
@@ -60,6 +61,11 @@ export default defineSiteConfig({
       color: '#1e90ff',
     },
   ],
+
+  // 评论：随 config/integrations.ts 里的 giscus 开关一起生效
+  comment: {
+    enable: giscus.enable,
+  },
 
   // 构建期生成本地索引，客户端检索，不依赖外部搜索服务
   search: {
